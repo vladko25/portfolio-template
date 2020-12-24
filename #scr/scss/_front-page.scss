@@ -1,0 +1,100 @@
+.main {
+}
+/* ================================================== */
+.section {
+	padding: 0 5%;
+	/* .section_1 */
+	&_1 {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	/* .section__content */
+	&__content {
+	}
+	/* .section__header */
+	&__header {
+	}
+	/* .section__subtitle */
+	&__subtitle {
+	}
+	/* .section__title */
+	&__title {
+	}
+	/* .section__cards */
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	/* .section__card */
+	&__card {
+		flex: 1 1 33.333%;
+	}
+}
+/* ================================================== */
+.cards {
+	counter-reset: albumList;
+}
+/* ================================================== */
+.card {
+	position: relative;
+	flex: 1 1 31.667%;
+	width: 100%;
+	max-width: 416px;
+	margin-right: 1.666%;
+	&:last-child {
+		margin-right: 0;
+	}
+	/* .card__number */
+	&__number {
+		position: relative;
+		height: 141px;
+		&::after {
+			counter-increment: albumList;
+			content: '0' counter(albumList);
+			display: block;
+			font-size: 117px;
+			line-height: 141px;
+			color: #8491a0;
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+	}
+	/* .card__title */
+	&__title {
+		font-size: 24px;
+		@include adaptiv-font(24, 18);
+		line-height: 36px;
+		font-weight: 700;
+		color: rgba(255, 255, 255, 1.0);
+		margin: 0;
+		margin-bottom: 22px;
+	}
+	/* .card__desc */
+	&__desc {
+		width: 100%;
+		max-width: 368px;
+		font-size: 16px;
+		line-height: 24px;
+		color: #8491a0;
+		margin: 0;
+		margin-bottom: 22px;
+	}
+}
+/* ================================================== */
+.text-color {
+	/* .text-color_1 */
+	&_1 {
+		color: $cgreenaccent;
+	}
+	/* .text-color_2 */
+	&_2 {
+		color: $cblueaccent;
+	}
+	/* .text-color_3 */
+	&_3 {
+		color: $cpinkaccent;
+	}
+}
+/* ================================================== */

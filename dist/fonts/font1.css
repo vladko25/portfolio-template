@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Sen-Regular';
+  src: url('Sen-Regular.woff') format('woff'),
+       url('Sen-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
