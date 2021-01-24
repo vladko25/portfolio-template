@@ -3,32 +3,107 @@
 /* ================================================== */
 .section {
 	padding: 0 5%;
-	/* .section_1 */
-	&_1 {
-		padding-top: 120px;
-		padding-bottom: 120px;
-	}
-	/* .section__content */
+}
+/* ================================================== */
+.cooperations {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	/* .cooperations__content */
 	&__content {
 	}
-	/* .section__header */
+	/* .cooperations__header */
 	&__header {
 	}
-	/* .section__subtitle */
+	/* .cooperations__subtitle */
 	&__subtitle {
 	}
-	/* .section__title */
+	/* .cooperations__title */
 	&__title {
 	}
-	/* .section__cards */
+	/* .cooperations__cards */
 	&__cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	/* .section__card */
+	/* .cooperations__card */
 	&__card {
 		flex: 1 1 33.333%;
+	}
+}
+/* ================================================== */
+.banner {
+	padding: 0;
+	background-color: $cpeachaccent;
+	color: $clevel1;
+	height: 600px;
+	display: flex;
+	position: relative;
+	/* .banner__content */
+	&__content {
+		flex: 1 1 50%;
+		width: 50%;
+		padding: 120px 5%;
+		width: 50%;
+		margin-right: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	/* .banner__title */
+	&__title {
+		font-size: 55px;
+		line-height: 66px;
+		color: $clevel1;
+		margin: 0 0 24px 0;
+		padding: 0;
+	}
+	/* .banner__text */
+	&__text {
+		font-size: 18px;
+		line-height: 150%;
+		color: #5b6876;
+		margin: 0;
+		padding: 0;
+	}
+	/* .banner__btn */
+	&__btn {
+		width: auto;
+		margin-top: auto;
+		margin-right: auto;
+		font-size: 18px;
+		line-height: 150%;
+		color: #5b6876;
+		text-decoration: none;
+		&:hover {
+			filter: opacity(0.5);
+		}
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: #8491a0;
+			margin-top: 4px;
+		}
+	}
+	/* .banner__bg */
+	&__bg {
+		flex: 1 1 50%;
+		width: 50%;
+		height: 600px;
+	}
+	/* .banner__img */
+	&__img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+		&_1 {
+			object-position: center center;
+		}
+		&_2 {
+			object-position: top center;
+		}
 	}
 }
 /* ================================================== */
@@ -98,3 +173,120 @@
 	}
 }
 /* ================================================== */
+.projects {
+	padding: 120px 5% 153px 5%;
+	/* .projects__header */
+	&__header {
+		max-width: 48.149%;
+		margin: 0 0 80px 0;
+	}
+	/* .projects__title */
+	&__title {
+		font-size: 16px;
+		line-height: 150%;
+		font-weight: 700;
+		color: #8491a0;
+		text-transform: uppercase;
+		margin: 0 0 8px 0;
+		padding: 0;
+	}
+	/* .projects__label */
+	&__label {
+		font-size: 55px;
+		line-height: 66px;
+		font-weight: 700;
+		margin: 0;
+		padding: 0;
+	}
+	/* .projects__content */
+	&__content {
+		position: relative;
+	}
+	/* .projects__cards */
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: relative;
+	}
+	/* .projects__card */
+	&__card {
+		flex: 0 1 48.149%;
+		width: 48.149%;
+		height: 100%;
+		margin-bottom: 24px;
+		position: relative;
+		&:nth-child(2n+2) {
+			margin-top: -244px;
+		}
+	}
+	/* .projects__btn-wrapper */
+	&__btn-wrapper {
+		max-width: 48.149%;
+		margin: 0;
+		margin-left: auto;
+		margin-top: -164px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	/* .projects__btn */
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 24px 32px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 150%;
+		font-weight: 700;
+		color: #fff;
+		border: 1px solid #5221e6;
+	}
+}
+/* ================================================== */
+.project-card {
+	background-color: $clevel1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* .project-card__img-wrapper */
+	&__img-wrapper {
+		flex: 1 1 100%;
+		height: 620px;
+	}
+	/* .project-card__img */
+	&__img {
+		display: block;
+		max-width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	/* .project-card__content */
+	&__content {
+		flex: 1 1 100%;
+		padding: 40px 32px;
+	}
+	/* .project-card__title */
+	&__title {
+		font-size: 24px;
+		line-height: 150%;
+		font-weight: 700;
+		margin: 0 0 13px 0;
+		padding: 0;
+	}
+	/* .project-card__desc */
+	&__desc {
+		font-size: 18px;
+		line-height: 150%;
+		color: #8491a0;
+		margin: 0;
+		padding: 0;
+	}
+}
+/* ================================================== */
+

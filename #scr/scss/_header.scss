@@ -1,5 +1,5 @@
 $cbase: #000000;
-$clvl1: #181823;
+$clevel1: #181823;
 $clightgrey: #deecf9;
 $cdarkgrey: #c7e0f4;
 $ctext: #ffffff;
@@ -73,6 +73,7 @@ body {
 	width: 100%;
 	max-width: $maxWidth;
 	margin: 0 auto;
+	background-color: $cbase;
 }
 /* =================================================== */
 .logo {
@@ -109,8 +110,7 @@ body {
 		right: 0;
 		width: 62.5%;
 		height: 100%;
-		background-color: $clvl1;
-		z-index: -1;
+		background-color: $clevel1;
 		@media (max-width: 767px) {
 			background: 0;
 			display: none;
@@ -122,7 +122,7 @@ body {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 72px;
+		padding: 0 8%;
 		z-index: 9;
 
 		@media (max-width: 360px) {
@@ -142,6 +142,7 @@ body {
 	}
 	/* .header__nav */
 	&__nav {
+		z-index: 1;
 	}
 	/* .header__hero-screen */
 	&__hero-screen {
@@ -151,6 +152,7 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		padding: 4vh 0;
+		z-index: 1;
 		@media (max-width: 360px) {
 			margin-top: 72px;
 		}
